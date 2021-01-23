@@ -52,6 +52,14 @@ a.btn {
 	font-weight: 500;
 	line-height: 16px;
 	border-radius: 44px;
+	outline: none;
+}
+
+a.btn:hover,
+a.btn:active,
+a.btn:focus {
+	background-color: #794ee8;
+	color: #fff;
 }
 
 a.btn.no-border {
@@ -69,6 +77,13 @@ a.nav-link {
 a.nav-link:hover {
 	border-radius: 44px;
 	border: 1px solid #d7d5d9;
+}
+
+.input-group > .input-group-append > a.btn {
+	border-radius: 44px;
+	height: 100%;
+	line-height: 24px;
+	width: 100%;
 }
 
 .nav-container {
@@ -459,19 +474,32 @@ footer ul li a {
 	padding-right: 30px;
 	color: #794ee8;
 	font-weight: 500;
+	line-height: 24px;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active,
+.btn-outline-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-secondary.dropdown-toggle {
+	color: #fff;
+	background-color: #794ee8;
 }
 
 .btn.btn-primary {
-	font-weight: 300;
 	background-color: #794ee8;
 	border-radius: 44px;
 	height: 48px;
 	color: #fff;
 	border: none;
 	outline: none;
+	border: 2px solid #794ee8;
 	font-weight: 500;
 	padding-left: 30px;
 	padding-right: 30px;
+	line-height: 24px;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled).active,
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+	background-color: #794ee8;
 }
 
 .contact-icon {
@@ -523,6 +551,10 @@ footer ul li a {
 	padding-right: 15px;
 	height: 48px;
 }
+.carousel-control-next,
+.carousel-control-prev {
+	opacity: 1;
+}
 
 .form-item-icon {
 	position: relative;
@@ -569,13 +601,13 @@ select.form-control:not([size]):not([multiple]) {
 	}
 
 	.carousel-control-prev {
-		left: -45px;
+		left: -70px;
 		width: 50px;
 		opacity: 1;
 	}
 
 	.carousel-control-next {
-		right: -45px;
+		right: -70px;
 		width: 50px;
 		opacity: 1;
 	}
@@ -870,6 +902,23 @@ select.form-control:not([size]):not([multiple]) {
 
 	.contact-box {
 		padding: 30px;
+	}
+	.carousel-control-next,
+	.carousel-control-prev {
+		width: 30px;
+		bottom: 50px;
+	}
+
+	.carousel-control-next {
+		right: -5px;
+	}
+	.carousel-control-prev {
+		left: -5px;
+	}
+
+	.extra-padding-horizontal-mobile {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
