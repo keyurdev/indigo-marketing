@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bar-animation.css" rel="stylesheet" />
+    <title>Hello, world!</title>
+  </head>
+
+  <body class="service" id="body">
+    <section class="page-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <div class="mobile-top-header d-block d-lg-none">
+              <div class="row">
+                <div class="col-auto">
+                  <div class="header-btn">
+                    <button
+                      onclick="barAnimation()"
+                      class="navTrigger"
+                      id="navTrigger"
+                    >
+                      <i></i><i></i><i></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="col text-right">
+                  <a href="appointment.html" class="btn custom">Request Appointment</a>
+                </div>
+              </div>
+            </div>
+            <div class="logo">San Francisco Psychiatrists, Inc.</div>
+            <div class="left-nav">
+              <ul>
+                <li>
+                  <a href="index.html">Welcome</a>
+                </li>
+                <li>
+                  <a href="bio.html">Dr. Subramanyan</a>
+                </li>
+                <li>
+                  <a href="services.html" class="active">Services</a>
+                </li>
+                <li>
+                  <a href="conditions.html">Conditions</a>
+                </li>
+                <li>
+                  <a href="location.html">Office Location</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="button-section d-none d-xl-block d-lg-block">
+              <a href="appointment.html" class="btn custom">Request Appointment</a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-12">
+            <div class="content-section">
+              <div class="content-block">
+                <h3 class="page-title">SERVICES</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      id="main-tab"
+                      data-toggle="tab"
+                      href="#main"
+                      role="tab"
+                      aria-controls="main"
+                      aria-selected="true"
+                      >Main</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="referrals-tab"
+                      data-toggle="tab"
+                      href="#referrals"
+                      role="tab"
+                      aria-controls="referrals"
+                      aria-selected="false"
+                      >Referrals</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="other-tab"
+                      data-toggle="tab"
+                      href="#other"
+                      role="tab"
+                      aria-controls="other"
+                      aria-selected="false"
+                      >Other</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      id="payment-tab"
+                      data-toggle="tab"
+                      href="#payment"
+                      role="tab"
+                      aria-controls="payment"
+                      aria-selected="false"
+                      >Payment/Insurance</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane active show"
+                    id="main"
+                    role="tabpanel"
+                    aria-labelledby="main-tab"
+                  >
+                    <div
+                      class="accordion md-accordion"
+                      id="accordionEx1"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="card hide-border">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne1">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordionEx1"
+                            href="#collapseOne1"
+                            aria-expanded="true"
+                            aria-controls="collapseOne1"
+                          >
+                            <h5 class="mb-0">
+                              <span
+                                >HIPAA-compliant telepsychiatry (video
+                                appointments)</span
+                              >
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseOne1"
+                          class="collapse show"
+                          role="tabpanel"
+                          aria-labelledby="headingOne1"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">content 1</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo2">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx1"
+                            href="#collapseTwo2"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo2"
+                          >
+                            <h5 class="mb-0">
+                              <span>Psychiatric diagnostic evaluations</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseTwo2"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingTwo2"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">content 2</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree3">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx1"
+                            href="#collapseThree3"
+                            aria-expanded="false"
+                            aria-controls="collapseThree3"
+                          >
+                            <h5 class="mb-0">
+                              <span>Second opinion consultations</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseThree3"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingThree3"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">
+                            <div class="card-block dark">Content3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingOne4">
+                          <a
+                            data-toggle="collapse"
+                            class="collapsed"
+                            data-parent="#accordionEx1"
+                            href="#collapseOne4"
+                            aria-expanded="false"
+                            aria-controls="collapseOne4"
+                          >
+                            <h5 class="mb-0">
+                              <span>Intranasal and oral ketamine therapy</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseOne4"
+                          class="collapse"
+                          role="tabpane4"
+                          aria-labelledby="headingOne4"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">content 1</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingTwo5">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx1"
+                            href="#collapseTwo5"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo5"
+                          >
+                            <h5 class="mb-0">
+                              <span>Long-term psychotherapy</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseTwo5"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingTwo5"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">content 2</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="headingThree6">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx1"
+                            href="#collapseThree6"
+                            aria-expanded="false"
+                            aria-controls="collapseThree6"
+                          >
+                            <h5 class="mb-0">
+                              <span>Brief psychotherapy (e.g. CBT)</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapseThree6"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="headingThree6"
+                          data-parent="#accordionEx"
+                        >
+                          <div class="card-body">
+                            <div class="card-block dark">Content3</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="referrals"
+                    role="tabpanel"
+                    aria-labelledby="referrals-tab"
+                  >
+                    <div
+                      class="accordion md-accordion"
+                      id="accordionEx2"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="card hide-border">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading21">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordionEx2"
+                            href="#collapse21"
+                            aria-expanded="true"
+                            aria-controls="collapse21"
+                          >
+                            <h5 class="mb-0">
+                              <span>ECT (electroconvulsive therapy)</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse21"
+                          class="collapse show"
+                          role="tabpanel"
+                          aria-labelledby="heading21"
+                          data-parent="#accordionEx2"
+                        >
+                          <div class="card-body">content 1</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading22">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx2"
+                            href="#collapse22"
+                            aria-expanded="false"
+                            aria-controls="collapse22"
+                          >
+                            <h5 class="mb-0">
+                              <span
+                                >TMS (repetitive transcranial magentic
+                                stimulation)</span
+                              >
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse22"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="heading22"
+                          data-parent="#accordionEx2"
+                        >
+                          <div class="card-body">content 2</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading23">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx2"
+                            href="#collapse23"
+                            aria-expanded="false"
+                            aria-controls="collapse23"
+                          >
+                            <h5 class="mb-0">
+                              <span>Deep TMS</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse23"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="heading23"
+                          data-parent="#accordionEx2"
+                        >
+                          <div class="card-body">
+                            <div class="card-block dark">Content3</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading24">
+                          <a
+                            data-toggle="collapse"
+                            class="collapsed"
+                            data-parent="#accordionEx2"
+                            href="#collapse24"
+                            aria-expanded="false"
+                            aria-controls="collapse24"
+                          >
+                            <h5 class="mb-0">
+                              <span>Deep Brain Stimulation (DBS)</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse24"
+                          class="collapse"
+                          role="tabpane4"
+                          aria-labelledby="heading24"
+                          data-parent="#accordionEx2"
+                        >
+                          <div class="card-body">content 1</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading25">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx2"
+                            href="#collapse25"
+                            aria-expanded="false"
+                            aria-controls="collapse25"
+                          >
+                            <h5 class="mb-0">
+                              <span>Intravenous Ketamine Infusion</span>
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse25"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="heading25"
+                          data-parent="#accordionEx2"
+                        >
+                          <div class="card-body">content 2</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="other"
+                    role="tabpanel"
+                    aria-labelledby="other-tab"
+                  >
+                    <div
+                      class="accordion md-accordion"
+                      id="accordionEx3"
+                      role="tablist"
+                      aria-multiselectable="true"
+                    >
+                      <div class="card hide-border">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading31">
+                          <a
+                            data-toggle="collapse"
+                            data-parent="#accordionEx3"
+                            href="#collapse31"
+                            aria-expanded="true"
+                            aria-controls="collapse31"
+                          >
+                            <h5 class="mb-0">
+                              <span
+                                >Referrals to clinical trials for
+                                investigational agents (e.g. psilocycbin for
+                                treatment-resistant Mood and Anxiety
+                                Disorders)</span
+                              >
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse31"
+                          class="collapse show"
+                          role="tabpanel"
+                          aria-labelledby="heading31"
+                          data-parent="#accordionEx3"
+                        >
+                          <div class="card-body">content 1</div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <!-- Card header -->
+                        <div class="card-header" role="tab" id="heading32">
+                          <a
+                            class="collapsed"
+                            data-toggle="collapse"
+                            data-parent="#accordionEx3"
+                            href="#collapse32"
+                            aria-expanded="false"
+                            aria-controls="collapse32"
+                          >
+                            <h5 class="mb-0">
+                              <span
+                                >Advisory role to digital mental health
+                                technology companies</span
+                              >
+                            </h5>
+                          </a>
+                        </div>
+
+                        <!-- Card body -->
+                        <div
+                          id="collapse32"
+                          class="collapse"
+                          role="tabpanel"
+                          aria-labelledby="heading32"
+                          data-parent="#accordionEx3"
+                        >
+                          <div class="card-body">content 2</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="payment"
+                    role="tabpanel"
+                    aria-labelledby="payment-tab"
+                  >
+                    <p>
+                      San Francisco Psychiatrists, Inc. is a full
+                      fee-for-service practice and is not paneled with any
+                      insurance providers. Thus, Dr. Subramanyan's services
+                      would be considered "out-of-network" with all insurers. As
+                      well, he has opted out of Medicare.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="conditions.html" class="next-page-link">
+                <img src="images/conditions.png" title="" />
+                <span>Conditions Treated</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>© 2021 All rights reserved</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function barAnimation() {
+        var element = document.getElementById('navTrigger');
+        element.classList.toggle('active');
+
+        var body_element = document.getElementById('body');
+        body_element.classList.toggle('open');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bar-animation.css" rel="stylesheet">
+    <title>Hello, world!</title>
+</head>
+
+<body class="home" id="body">
+    <section class="page-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="mobile-top-header d-block d-lg-none ">
+                        <div class="row">
+                            <div class="col-auto">
+                                <div class="header-btn">
+                                <button onclick="barAnimation()" class="navTrigger" id="navTrigger">
+                                    <i></i><i></i><i></i>
+                                </button>
+                            </div>
+                            </div>
+                            <div class="col text-right">
+                                <a href="appointment.html" class="btn custom">Request Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo">
+                        San Francisco Psychiatrists, Inc.
+                    </div>
+                    <div class="left-nav">
+                        <ul>
+                            <li>
+                                <a href="index.html" class="active">Welcome</a>
+                            </li>
+                            <li>
+                                <a href="bio.html" >Dr. Subramanyan</a>
+                            </li>
+                            <li>
+                                <a href="services.html" >Services</a>
+                            </li>
+                            <li>
+                                <a href="conditions.html" >Conditions</a>
+                            </li>
+                            <li>
+                                <a href="location.html" >Office Location</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="button-section d-none d-xl-block d-lg-block">
+                        <a href="appointment.html" class="btn custom">Request Appointment</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="content-section">
+                        <div class="content-block dark">
+                            <h3 class="page-title">
+                                Welcome
+                            </h3>
+                            <p class="page-text">San Francisco Psychiatrists, Inc. is a private practice of adult psychiatry focused
+                                on the evaluation and treatment of complex mental disorders, including</p>
+
+                                <ul>
+                                    <li>
+                                        so called "treatment-resistant" Mood and Anxiety Disorders
+                                    </li>
+                                    <li>
+                                        Attention Deficit/Hyperactivity Disorder (ADHD)
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    as well as the treatment of comorbid (co-occurring) conditions, such as
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Bipolar Disorders comorbid with Obsessive Compulsive Disorder
+                                    </li>
+                                    <li>
+                                        Mood and Anxiety Disorders comorbid with Personality Disorders
+                                    </li>
+                                    <li>
+                                        Mood and Anxiety Disorders comorbid with ADHD.
+                                    </li>
+                                </ul>
+
+                                
+                        </div>
+                        <a href="bio.html" class="next-page-link">
+                            <img src="images/bio_img.png" title=""> <span>Dr. Subramanyan</span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>© 2021 All rights reserved</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script>
+            function barAnimation() {
+                var element = document.getElementById("navTrigger");
+                element.classList.toggle("active");
+
+                var body_element = document.getElementById('body');
+        body_element.classList.toggle('open');
+                }
+        </script>
+
+</body>
+
+</html>
