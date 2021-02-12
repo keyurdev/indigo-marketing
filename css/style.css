@@ -931,3 +931,33 @@ select.form-control:not([size]):not([multiple]) {
 		left: 0;
 	}
 }
+
+@media (min-width: 1200px) {
+	body {
+		padding-top: 110px;
+	}
+	.header {
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		top: 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		padding-top: 95px;
+	}
+	.header {
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		top: 0;
+	}
+}
+
+
