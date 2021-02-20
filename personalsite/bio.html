@@ -1,616 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link href="css/all.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bar-animation.css" rel="stylesheet" />
-    <title>Hello, world!</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet" />
 
-  <body class="home" id="body">
-    <section class="page-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-12">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/bar-animation.css" rel="stylesheet" />
+  <title>Hello, world!</title>
+</head>
+
+<body class="bio" id="body">
+  <section class="page-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="left-navigation-container">
             <div class="mobile-top-header d-block d-lg-none">
               <div class="row">
                 <div class="col-auto">
                   <div class="header-btn">
-                    <button
-                      onclick="barAnimation()"
-                      class="navTrigger"
-                      id="navTrigger"
-                    >
+                    <button onclick="barAnimation()" class="navTrigger" id="navTrigger">
                       <i></i><i></i><i></i>
                     </button>
                   </div>
                 </div>
                 <div class="col text-right">
-                    <a href="appointment.html" class="btn custom">Request Appointment</a>
+                  <a href="appointment.html" class="btn custom">Request Appointment</a>
                 </div>
               </div>
-            </div>
-            <div class="logo">San Francisco Psychiatrists, Inc.</div>
-            <div class="left-nav">
-              <ul>
-                <li>
-                  <a href="index.html">Welcome</a>
-                </li>
-                <li>
-                  <a href="bio.html" class="active">Dr. Subramanyan</a>
-                </li>
-                <li>
-                  <a href="services.html">Services</a>
-                </li>
-                <li>
-                  <a href="conditions.html">Conditions</a>
-                </li>
-                <li>
-                  <a href="location.html">Office Location</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="button-section d-none d-xl-block d-lg-block">
-                <a href="appointment.html" class="btn custom">Request Appointment</a>
             </div>
           </div>
-          <div class="col-lg-8 col-12">
-            <div class="content-section">
-              <div class="content-block">
-                <h3 class="page-title">DR. SUBRAMANYAN</h3>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      id="home-tab"
-                      data-toggle="tab"
-                      href="#home"
-                      role="tab"
-                      aria-controls="home"
-                      aria-selected="true"
-                      >Educational Background</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="profile-tab"
-                      data-toggle="tab"
-                      href="#profile"
-                      role="tab"
-                      aria-controls="profile"
-                      aria-selected="false"
-                      >Clinical Interests</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="contact-tab"
-                      data-toggle="tab"
-                      href="#contact"
-                      role="tab"
-                      aria-controls="contact"
-                      aria-selected="false"
-                      >Professional Activities</a
-                    >
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div
-                    class="tab-pane fade show active"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row">
-                      <div class="col-md col-sm-12">
-                        <p>
-                          Dr. Subramanyan is a licensed physician in the State
-                          of California and a Diplomate of the American Board of
-                          Psychiatry and Neurology. He has been practicing since
-                          1999 and has been in priviate practice since 2004.
-                        </p>
-                        <p>
-                          He completed his medical education at Harvard Medical
-                          School and residency training in general psychiatry at
-                          the University of California, San Francisco.
-                        </p>
-                        <p>
-                          He has been pursuing his interest in human psychology
-                          and the field of psychiatry since he was an
-                          undergraduate at Case Western Reserve University.
-                        </p>
-                      </div>
-                      <div class="col-md-auto col-sm-12">
-                        <img src="images/girish_pic.png" title="" />
-                      </div>
+          <div class="logo">San Francisco Psychiatrists, Inc.</div>
+          <div class="left-nav">
+            <ul>
+              <li>
+                <a href="index.html">Welcome</a>
+              </li>
+              <li>
+                <a href="bio.html" class="active">Dr. Subramanyan</a>
+              </li>
+              <li>
+                <a href="services.html">Services</a>
+              </li>
+              <li>
+                <a href="conditions.html">Conditions</a>
+              </li>
+              <li>
+                <a href="location.html">Office Location</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="button-section d-none d-xl-block d-lg-block">
+            <a href="appointment.html" class="btn custom">Request Appointment</a>
+          </div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="content-section">
+            <div class="content-block">
+              <h3 class="page-title">DR. SUBRAMANYAN</h3>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                    aria-controls="home" aria-selected="true">Educational Background</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                    aria-controls="profile" aria-selected="false">Clinical Interests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                    aria-controls="contact" aria-selected="false">Professional Activities</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-md col-sm-12">
+                      <p>
+                        Dr. Subramanyan is a licensed physician in the State
+                        of California and a Diplomate of the American Board of
+                        Psychiatry and Neurology. He has been practicing since
+                        1999 and has been in priviate practice since 2004.
+                      </p>
+                      <p>
+                        He completed his medical education at Harvard Medical
+                        School and residency training in general psychiatry at
+                        the University of California, San Francisco.
+                      </p>
+                      <p>
+                        He has been pursuing his interest in human psychology
+                        and the field of psychiatry since he was an
+                        undergraduate at Case Western Reserve University.
+                      </p>
                     </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="profile"
-                    role="tabpanel"
-                    aria-labelledby="profile-tab"
-                  >
-                    <div
-                      class="accordion md-accordion"
-                      id="accordionEx"
-                      role="tablist"
-                      aria-multiselectable="true"
-                    >
-                      <div class="card hide-border">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingOne1">
-                          <a
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseOne1"
-                            aria-expanded="true"
-                            aria-controls="collapseOne1"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >The development of biomarkers in psychiatry
-                                (fMRI, qEEG, serum markers)</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseOne1"
-                          class="collapse show"
-                          role="tabpanel"
-                          aria-labelledby="headingOne1"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 1</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingTwo2">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseTwo2"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo2"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Transformation of psychiatry’s diagnostic
-                                classification system to one that is based on
-                                biological markers</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseTwo2"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingTwo2"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 2</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingThree3">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseThree3"
-                            aria-expanded="false"
-                            aria-controls="collapseThree3"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Neural circuit-based understanding of mental
-                                disorders</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseThree3"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingThree3"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">
-                            <div class="card-block dark">Content3</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingOne4">
-                          <a
-                            data-toggle="collapse"
-                            class="collapsed"
-                            data-parent="#accordionEx"
-                            href="#collapseOne4"
-                            aria-expanded="false"
-                            aria-controls="collapseOne4"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Treatment-resistant Mood and Anxiety
-                                Disorders</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseOne4"
-                          class="collapse"
-                          role="tabpane4"
-                          aria-labelledby="headingOne4"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 1</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingTwo5">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseTwo5"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo5"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Phenotypic variation in the presentation of
-                                Attention-Deficit/Hyperactivity Disorder
-                                (ADHD)</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseTwo5"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingTwo5"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 2</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingThree6">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseThree6"
-                            aria-expanded="false"
-                            aria-controls="collapseThree6"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Executive functioning deficits in ADHD
-                                manifesting as problems with emotional
-                                regulation</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseThree6"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingThree6"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">
-                            <div class="card-block dark">Content3</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingOne7">
-                          <a
-                            data-toggle="collapse"
-                            class="collapsed"
-                            data-parent="#accordionEx"
-                            href="#collapseOne7"
-                            aria-expanded="false"
-                            aria-controls="collapseOne7"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Neural mechanism behind Rejection Sensitivity
-                                Dysphoria (RSD)</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseOne7"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingOne7"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 1</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingTwo8">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseTwo8"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo8"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Complex psychiatric presentations due to
-                                comorbidity (the presence of several mental
-                                disorders interacting with one another)</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseTwo8"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingTwo8"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 2</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingThree9">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseThree9"
-                            aria-expanded="false"
-                            aria-controls="collapseThree9"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Personality Disorders and how they affect the
-                                expression of Mood and Anxiety Disorders</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseThree9"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingThree9"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">
-                            <div class="card-block dark">Content3</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingOne10">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseOne10"
-                            aria-expanded="false"
-                            aria-controls="collapseOne10"
-                          >
-                            <h5 class="mb-0">
-                              <span>Psychotherapy ("Talk Therapy")</span>
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseOne10"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingOne10"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 1</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingTwo12">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseTwo12"
-                            aria-expanded="false"
-                            aria-controls="collapseTwo12"
-                          >
-                            <h5 class="mb-0">
-                              <span
-                                >Psychopharmacology ("Medication
-                                Treatment")</span
-                              >
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseTwo12"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingTwo12"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">content 2</div>
-                        </div>
-                      </div>
-
-                      <div class="card">
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingThree13">
-                          <a
-                            class="collapsed"
-                            data-toggle="collapse"
-                            data-parent="#accordionEx"
-                            href="#collapseThree13"
-                            aria-expanded="false"
-                            aria-controls="collapseThree13"
-                          >
-                            <h5 class="mb-0">
-                              <span>Digital mental health technologies</span>
-                            </h5>
-                          </a>
-                        </div>
-
-                        <!-- Card body -->
-                        <div
-                          id="collapseThree13"
-                          class="collapse"
-                          role="tabpanel"
-                          aria-labelledby="headingThree13"
-                          data-parent="#accordionEx"
-                        >
-                          <div class="card-body">
-                            <div class="card-block dark">Content3</div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-md-auto col-sm-12">
+                      <img src="images/girish_pic.png" title="" />
                     </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="contact"
-                    role="tabpanel"
-                    aria-labelledby="contact-tab"
-                  >
-                    <p>
-                      Dr. Subramanyan divides his time, professionally, between
-                      practicing psychiatry and overseeing the activities of a
-                      private company that is developing software for the mental
-                      health field. The software aims to improve the workflow of
-                      practicing clincians by assisting with psychiatric
-                      diagnostic evaluations and treatment-tracking.
-                    </p>
                   </div>
                 </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+                    <div class="card hide-border">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingOne1">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                          aria-controls="collapseOne1">
+                          <h5 class="mb-0">
+                            <span>The development of biomarkers in psychiatry
+                              (fMRI, qEEG, serum markers)</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingTwo2">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                          aria-expanded="false" aria-controls="collapseTwo2">
+                          <h5 class="mb-0">
+                            <span>Transformation of psychiatry’s diagnostic
+                              classification system to one that is based on
+                              biological markers</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingThree3">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                          aria-expanded="false" aria-controls="collapseThree3">
+                          <h5 class="mb-0">
+                            <span>Neural circuit-based understanding of mental
+                              disorders</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingOne4">
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordionEx" href="#collapseOne4"
+                          aria-expanded="false" aria-controls="collapseOne4">
+                          <h5 class="mb-0">
+                            <span>Treatment-resistant Mood and Anxiety
+                              Disorders</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseOne4" class="collapse" role="tabpane4" aria-labelledby="headingOne4"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingTwo5">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo5"
+                          aria-expanded="false" aria-controls="collapseTwo5">
+                          <h5 class="mb-0">
+                            <span>Phenotypic variation in the presentation of
+                              Attention-Deficit/Hyperactivity Disorder
+                              (ADHD)</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseTwo5" class="collapse" role="tabpanel" aria-labelledby="headingTwo5"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingThree6">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree6"
+                          aria-expanded="false" aria-controls="collapseThree6">
+                          <h5 class="mb-0">
+                            <span>Executive functioning deficits in ADHD
+                              manifesting as problems with emotional
+                              regulation</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseThree6" class="collapse" role="tabpanel" aria-labelledby="headingThree6"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingOne7">
+                        <a data-toggle="collapse" class="collapsed" data-parent="#accordionEx" href="#collapseOne7"
+                          aria-expanded="false" aria-controls="collapseOne7">
+                          <h5 class="mb-0">
+                            <span>Neural mechanism behind Rejection Sensitivity
+                              Dysphoria (RSD)</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseOne7" class="collapse" role="tabpanel" aria-labelledby="headingOne7"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingTwo8">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo8"
+                          aria-expanded="false" aria-controls="collapseTwo8">
+                          <h5 class="mb-0">
+                            <span>Complex psychiatric presentations due to
+                              comorbidity (the presence of several mental
+                              disorders interacting with one another)</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseTwo8" class="collapse" role="tabpanel" aria-labelledby="headingTwo8"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingThree9">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree9"
+                          aria-expanded="false" aria-controls="collapseThree9">
+                          <h5 class="mb-0">
+                            <span>Personality Disorders and how they affect the
+                              expression of Mood and Anxiety Disorders</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseThree9" class="collapse" role="tabpanel" aria-labelledby="headingThree9"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingOne10">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne10"
+                          aria-expanded="false" aria-controls="collapseOne10">
+                          <h5 class="mb-0">
+                            <span>Psychotherapy ("Talk Therapy")</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseOne10" class="collapse" role="tabpanel" aria-labelledby="headingOne10"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingTwo12">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo12"
+                          aria-expanded="false" aria-controls="collapseTwo12">
+                          <h5 class="mb-0">
+                            <span>Psychopharmacology ("Medication
+                              Treatment")</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseTwo12" class="collapse" role="tabpanel" aria-labelledby="headingTwo12"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                      <!-- Card header -->
+                      <div class="card-header" role="tab" id="headingThree13">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree13"
+                          aria-expanded="false" aria-controls="collapseThree13">
+                          <h5 class="mb-0">
+                            <span>Digital mental health technologies</span>
+                          </h5>
+                        </a>
+                      </div>
+
+                      <!-- Card body -->
+                      <div id="collapseThree13" class="collapse" role="tabpanel" aria-labelledby="headingThree13"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                          <div class="card-block dark">-</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <p>
+                    Dr. Subramanyan divides his time, professionally, between
+                    practicing psychiatry and overseeing the activities of a
+                    private company that is developing software for the mental
+                    health field. The software aims to improve the workflow of
+                    practicing clincians by assisting with psychiatric
+                    diagnostic evaluations and treatment-tracking.
+                  </p>
+                </div>
               </div>
-              <a href="services.html" class="next-page-link">
-                <img src="images/service_img.png" title="" />
-                <span>Services Provided</span>
-              </a>
             </div>
+            <a href="services.html" class="next-page-link">
+              <img src="images/service_img.png" title="" />
+              <span>Services Provided</span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li>© 2021 All rights reserved</li>
-        </ul>
-      </div>
-    </footer>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>© 2021 All rights reserved</li>
+      </ul>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <script>
-      function barAnimation() {
-        var element = document.getElementById('navTrigger');
-        element.classList.toggle('active');
+  <script>
+    function barAnimation() {
+      var element = document.getElementById('navTrigger');
+      element.classList.toggle('active');
 
-        var body_element = document.getElementById('body');
-        body_element.classList.toggle('open');
-      }
-    </script>
-  </body>
+      var body_element = document.getElementById('body');
+      body_element.classList.toggle('open');
+    }
+  </script>
+</body>
+
 </html>

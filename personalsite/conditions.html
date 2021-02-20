@@ -1,48 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link href="css/all.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bar-animation.css" rel="stylesheet" />
-    <title>Hello, world!</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet" />
 
-  <body class="conditions" id="body">
-    <section class="page-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-12">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/bar-animation.css" rel="stylesheet" />
+  <title>Hello, world!</title>
+</head>
+
+<body class="conditions" id="body">
+  <section class="page-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="left-navigation-container">
             <div class="mobile-top-header d-block d-lg-none">
               <div class="row">
                 <div class="col-auto">
                   <div class="header-btn">
-                    <button
-                      onclick="barAnimation()"
-                      class="navTrigger"
-                      id="navTrigger"
-                    >
+                    <button onclick="barAnimation()" class="navTrigger" id="navTrigger">
                       <i></i><i></i><i></i>
                     </button>
                   </div>
@@ -65,7 +53,7 @@
                   <a href="services.html">Services</a>
                 </li>
                 <li>
-                  <a href="conditions.html"  class="active">Conditions</a>
+                  <a href="conditions.html" class="active">Conditions</a>
                 </li>
                 <li>
                   <a href="location.html">Office Location</a>
@@ -77,601 +65,357 @@
               <a href="appointment.html" class="btn custom">Request Appointment</a>
             </div>
           </div>
-          <div class="col-lg-8 col-12">
-            <div class="content-section">
-              <div class="content-block">
-                <h3 class="page-title">Conditions Treated</h3>
-                <div
-                  class="accordion md-accordion"
-                  id="accordionEx1"
-                  role="tablist"
-                  aria-multiselectable="true"
-                >
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="headingOne1">
-                      <a
-                        data-toggle="collapse"
-                        data-parent="#accordionEx1"
-                        href="#collapseOne1"
-                        aria-expanded="true"
-                        aria-controls="collapseOne1"
-                      >
-                        <h5 class="mb-0">
-                          <span>Mood Disorders</span>
-                        </h5>
-                      </a>
-                    </div>
+        </div>
+        <div class="col-lg-8 col-12">
+          <div class="content-section">
+            <div class="content-block">
+              <h3 class="page-title">Conditions Treated</h3>
+              <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionEx1" href="#collapseOne1" aria-expanded="true"
+                      aria-controls="collapseOne1">
+                      <h5 class="mb-0">
+                        <span>Mood Disorders</span>
+                      </h5>
+                    </a>
+                  </div>
 
-                    <!-- Card body -->
-                    <div
-                      id="collapseOne1"
-                      class="collapse show"
-                      role="tabpanel"
-                      aria-labelledby="headingOne1"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">
-                        <div
-                          class="accordion md-accordion"
-                          id="accordion_inner_ex1"
-                          role="tablist"
-                          aria-multiselectable="true"
-                        >
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="headingOne_1_1"
-                            >
-                              <a
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_1"
-                                aria-expanded="true"
-                                aria-controls="collapse_1_1"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Mood Disorders</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_1"
-                              class="collapse show"
-                              role="tabpanel"
-                              aria-labelledby="heading_1_1"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
+                  <!-- Card body -->
+                  <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="accordion md-accordion" id="accordion_inner_ex1" role="tablist"
+                        aria-multiselectable="true">
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="headingOne_1_1">
+                            <a data-toggle="collapse" data-parent="#accordion_inner_ex1" href="#collapse_1_1"
+                              aria-expanded="true" aria-controls="collapse_1_1">
+                              <h5 class="mb-0">
+                                <span>Major Depressive Disorder</span>
+                              </h5>
+                            </a>
                           </div>
 
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_1_2"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_2"
-                                aria-expanded="false"
-                                aria-controls="collapse_1_2"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Anxiety Disorders</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_2"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_1_2"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_1_3"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_3"
-                                aria-expanded="false"
-                                aria-controls="collapse_1_3"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Obsessive-Compulsive Disorders</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_3"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_1_3"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_1_4"
-                            >
-                              <a
-                                data-toggle="collapse"
-                                class="collapsed"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_4"
-                                aria-expanded="false"
-                                aria-controls="collapse_1_4"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Post-Traumatic Stress Disorder</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_4"
-                              class="collapse"
-                              role="tabpane4"
-                              aria-labelledby="heading_1_4"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_1_5"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_5"
-                                aria-expanded="false"
-                                aria-controls="collapse_1_5"
-                              >
-                                <h5 class="mb-0">
-                                  <span
-                                    >Attention-Deficit/Hyperactivity
-                                    Disorder</span
-                                  >
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_5"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_1_5"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_1_6"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex1"
-                                href="#collapse_1_6"
-                                aria-expanded="false"
-                                aria-controls="collapse_1_6"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Personality Disorders</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_1_6"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_1_6"
-                              data-parent="#accordion_inner_ex1"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
+                          <!-- Card body -->
+                          <div id="collapse_1_1" class="collapse show" role="tabpanel" aria-labelledby="heading_1_1"
+                            data-parent="#accordion_inner_ex1">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="heading_2">
-                      <a
-                        class="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordionEx1"
-                        href="#collapse_2"
-                        aria-expanded="false"
-                        aria-controls="collapse_2"
-                      >
-                        <h5 class="mb-0">
-                          <span>Anxiety Disorders</span>
-                        </h5>
-                      </a>
-                    </div>
-
-                    <!-- Card body -->
-                    <div
-                      id="collapse_2"
-                      class="collapse"
-                      role="tabpanel"
-                      aria-labelledby="heading_2"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">
-                        <div
-                          class="accordion md-accordion"
-                          id="accordion_inner_ex2"
-                          role="tablist"
-                          aria-multiselectable="true"
-                        >
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="headingOne_2_1"
-                            >
-                              <a
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex2"
-                                href="#collapse_2_1"
-                                aria-expanded="true"
-                                aria-controls="collapse_2_1"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Generalized Anxiety Disorder</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_2_1"
-                              class="collapse show"
-                              role="tabpanel"
-                              aria-labelledby="heading_2_1"
-                              data-parent="#accordion_inner_ex2"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Generalized anxiety disorder (GAD) is an anxiety disorder characterized by excessive, uncontrollable and often irrational worry about events or activities.</div>
-                              </div>
-                            </div>
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_1_2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion_inner_ex1"
+                              href="#collapse_1_2" aria-expanded="false" aria-controls="collapse_1_2">
+                              <h5 class="mb-0">
+                                <span>Persistent Depressive Disorder</span>
+                              </h5>
+                            </a>
                           </div>
 
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_2_2"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex2"
-                                href="#collapse_2_2"
-                                aria-expanded="false"
-                                aria-controls="collapse_2_2"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Social Anxiety Disorder</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_2_2"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_2_2"
-                              data-parent="#accordion_inner_ex2"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
+                          <!-- Card body -->
+                          <div id="collapse_1_2" class="collapse" role="tabpanel" aria-labelledby="heading_1_2"
+                            data-parent="#accordion_inner_ex1">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
                             </div>
                           </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_2_3"
-                            >
-                              <a
-                                class="collapsed"
-                                data-toggle="collapse"
-                                data-parent="#accordion_inner_ex2"
-                                href="#collapse_2_3"
-                                aria-expanded="false"
-                                aria-controls="collapse_2_3"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Panic Disorder</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_2_3"
-                              class="collapse"
-                              role="tabpanel"
-                              aria-labelledby="heading_2_3"
-                              data-parent="#accordion_inner_ex2"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="card">
-                            <!-- Card header -->
-                            <div
-                              class="card-header"
-                              role="tab"
-                              id="heading_2_4"
-                            >
-                              <a
-                                data-toggle="collapse"
-                                class="collapsed"
-                                data-parent="#accordion_inner_ex2"
-                                href="#collapse_2_4"
-                                aria-expanded="false"
-                                aria-controls="collapse_2_4"
-                              >
-                                <h5 class="mb-0">
-                                  <span>Specific Phobias</span>
-                                </h5>
-                              </a>
-                            </div>
-
-                            <!-- Card body -->
-                            <div
-                              id="collapse_2_4"
-                              class="collapse"
-                              role="tabpane4"
-                              aria-labelledby="heading_2_4"
-                              data-parent="#accordion_inner_ex2"
-                            >
-                              <div class="card-body">
-                                <div class="card-block dark">Content3</div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_1_3">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion_inner_ex1"
+                              href="#collapse_1_3" aria-expanded="false" aria-controls="collapse_1_3">
+                              <h5 class="mb-0">
+                                <span>Premenstrual Dysphoric Disorder</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_1_3" class="collapse" role="tabpanel" aria-labelledby="heading_1_3"
+                            data-parent="#accordion_inner_ex1">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_1_4">
+                            <a data-toggle="collapse" class="collapsed" data-parent="#accordion_inner_ex1"
+                              href="#collapse_1_4" aria-expanded="false" aria-controls="collapse_1_4">
+                              <h5 class="mb-0">
+                                <span>Bipolar Disorders</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_1_4" class="collapse" role="tabpane4" aria-labelledby="heading_1_4"
+                            data-parent="#accordion_inner_ex1">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_1_5">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion_inner_ex1"
+                              href="#collapse_1_5" aria-expanded="false" aria-controls="collapse_1_5">
+                              <h5 class="mb-0">
+                                <span>Seasonal Affective Disorder</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_1_5" class="collapse" role="tabpanel" aria-labelledby="heading_1_5"
+                            data-parent="#accordion_inner_ex1">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="heading_3">
-                      <a
-                        class="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordionEx1"
-                        href="#collapse_3"
-                        aria-expanded="false"
-                        aria-controls="collapse_3"
-                      >
-                        <h5 class="mb-0">
-                          <span>Obsessive-Compulsive Disorders</span>
-                        </h5>
-                      </a>
-                    </div>
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="heading_2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse_2"
+                      aria-expanded="false" aria-controls="collapse_2">
+                      <h5 class="mb-0">
+                        <span>Anxiety Disorders</span>
+                      </h5>
+                    </a>
+                  </div>
 
-                    <!-- Card body -->
-                    <div
-                      id="collapse_3"
-                      class="collapse"
-                      role="tabpanel"
-                      aria-labelledby="heading_3"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">
-                        <div class="card-block dark">Content3</div>
+                  <!-- Card body -->
+                  <div id="collapse_2" class="collapse" role="tabpanel" aria-labelledby="heading_2"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="accordion md-accordion" id="accordion_inner_ex2" role="tablist"
+                        aria-multiselectable="true">
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="headingOne_2_1">
+                            <a data-toggle="collapse" data-parent="#accordion_inner_ex2" href="#collapse_2_1"
+                              aria-expanded="true" aria-controls="collapse_2_1">
+                              <h5 class="mb-0">
+                                <span>Generalized Anxiety Disorder</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_2_1" class="collapse show" role="tabpanel" aria-labelledby="heading_2_1"
+                            data-parent="#accordion_inner_ex2">
+                            <div class="card-body">
+                              <div class="card-block dark">Generalized anxiety disorder (GAD) is an anxiety disorder
+                                characterized by excessive, uncontrollable and often irrational worry about events or
+                                activities.</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_2_2">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion_inner_ex2"
+                              href="#collapse_2_2" aria-expanded="false" aria-controls="collapse_2_2">
+                              <h5 class="mb-0">
+                                <span>Social Anxiety Disorder</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_2_2" class="collapse" role="tabpanel" aria-labelledby="heading_2_2"
+                            data-parent="#accordion_inner_ex2">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_2_3">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion_inner_ex2"
+                              href="#collapse_2_3" aria-expanded="false" aria-controls="collapse_2_3">
+                              <h5 class="mb-0">
+                                <span>Panic Disorder</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_2_3" class="collapse" role="tabpanel" aria-labelledby="heading_2_3"
+                            data-parent="#accordion_inner_ex2">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <!-- Card header -->
+                          <div class="card-header" role="tab" id="heading_2_4">
+                            <a data-toggle="collapse" class="collapsed" data-parent="#accordion_inner_ex2"
+                              href="#collapse_2_4" aria-expanded="false" aria-controls="collapse_2_4">
+                              <h5 class="mb-0">
+                                <span>Specific Phobias</span>
+                              </h5>
+                            </a>
+                          </div>
+
+                          <!-- Card body -->
+                          <div id="collapse_2_4" class="collapse" role="tabpane4" aria-labelledby="heading_2_4"
+                            data-parent="#accordion_inner_ex2">
+                            <div class="card-body">
+                              <div class="card-block dark">-</div>
+                            </div>
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="heading_4">
-                      <a
-                        data-toggle="collapse"
-                        class="collapsed"
-                        data-parent="#accordionEx1"
-                        href="#collapse_4"
-                        aria-expanded="false"
-                        aria-controls="collapse_4"
-                      >
-                        <h5 class="mb-0">
-                          <span>Post-Traumatic Stress Disorder</span>
-                        </h5>
-                      </a>
-                    </div>
-
-                    <!-- Card body -->
-                    <div
-                      id="collapse_4"
-                      class="collapse"
-                      role="tabpane4"
-                      aria-labelledby="heading_4"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">content 1</div>
-                    </div>
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="heading_3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse_3"
+                      aria-expanded="false" aria-controls="collapse_3">
+                      <h5 class="mb-0">
+                        <span>Obsessive-Compulsive Disorders</span>
+                      </h5>
+                    </a>
                   </div>
 
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="heading_5">
-                      <a
-                        class="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordionEx1"
-                        href="#collapse_5"
-                        aria-expanded="false"
-                        aria-controls="collapse_5"
-                      >
-                        <h5 class="mb-0">
-                          <span>Attention-Deficit/Hyperactivity Disorder</span>
-                        </h5>
-                      </a>
-                    </div>
-
-                    <!-- Card body -->
-                    <div
-                      id="collapse_5"
-                      class="collapse"
-                      role="tabpanel"
-                      aria-labelledby="heading_5"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">content 2</div>
+                  <!-- Card body -->
+                  <div id="collapse_3" class="collapse" role="tabpanel" aria-labelledby="heading_3"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="card-block dark">-</div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="card">
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="heading_6">
-                      <a
-                        class="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordionEx1"
-                        href="#collapse_6"
-                        aria-expanded="false"
-                        aria-controls="collapse_6"
-                      >
-                        <h5 class="mb-0">
-                          <span>Personality Disorders</span>
-                        </h5>
-                      </a>
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="heading_4">
+                    <a data-toggle="collapse" class="collapsed" data-parent="#accordionEx1" href="#collapse_4"
+                      aria-expanded="false" aria-controls="collapse_4">
+                      <h5 class="mb-0">
+                        <span>Post-Traumatic Stress Disorder</span>
+                      </h5>
+                    </a>
+                  </div>
+
+                  <!-- Card body -->
+                  <div id="collapse_4" class="collapse" role="tabpane4" aria-labelledby="heading_4"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="card-block dark">-</div>
                     </div>
+                  </div>
+                </div>
 
-                    <!-- Card body -->
-                    <div
-                      id="collapse_6"
-                      class="collapse"
-                      role="tabpanel"
-                      aria-labelledby="heading_6"
-                      data-parent="#accordionEx"
-                    >
-                      <div class="card-body">
-                        <div class="card-block dark">Content3</div>
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="heading_5">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse_5"
+                      aria-expanded="false" aria-controls="collapse_5">
+                      <h5 class="mb-0">
+                        <span>Attention-Deficit/Hyperactivity Disorder</span>
+                      </h5>
+                    </a>
+                  </div>
+
+                  <!-- Card body -->
+                  <div id="collapse_5" class="collapse" role="tabpanel" aria-labelledby="heading_5"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="card-block dark">-</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <!-- Card header -->
+                  <div class="card-header" role="tab" id="heading_6">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapse_6"
+                      aria-expanded="false" aria-controls="collapse_6">
+                      <h5 class="mb-0">
+                        <span>Personality Disorders</span>
+                      </h5>
+                    </a>
+                  </div>
+
+                  <!-- Card body -->
+                  <div id="collapse_6" class="collapse" role="tabpanel" aria-labelledby="heading_6"
+                    data-parent="#accordionEx">
+                    <div class="card-body">
+                      <div class="card-block dark">
+                        -
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <a href="location.html" class="next-page-link">
-                <img src="images/location_img.png" title="" />
-                <span>Office Location</span>
-              </a>
             </div>
+            <a href="location.html" class="next-page-link">
+              <img src="images/location_img.png" title="" />
+              <span>Office Location</span>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="container">
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li>© 2021 All rights reserved</li>
-        </ul>
-      </div>
-    </footer>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>© 2021 All rights reserved</li>
+      </ul>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-    <script>
-      function barAnimation() {
-        var element = document.getElementById('navTrigger');
-        element.classList.toggle('active');
-        var body_element = document.getElementById('body');
-        body_element.classList.toggle('open');
-      }
-    </script>
-  </body>
+  <script>
+    function barAnimation() {
+      var element = document.getElementById('navTrigger');
+      element.classList.toggle('active');
+      var body_element = document.getElementById('body');
+      body_element.classList.toggle('open');
+    }
+  </script>
+</body>
+
 </html>
