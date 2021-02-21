@@ -22,17 +22,20 @@ body.bio {
 }
 
 body.service {
-	background: url(../images/service_bottom_img.png) bottom 0 left 0 no-repeat fixed;
+	background: url(../images/service_bottom_img.png) bottom 0 left 0 no-repeat
+		fixed;
 	background-size: 100% auto;
 }
 
 body.conditions {
-	background: url(../images/condition_bottom_img.png) bottom 0 left 0 no-repeat fixed;
+	background: url(../images/condition_bottom_img.png) bottom 0 left 0 no-repeat
+		fixed;
 	background-size: 100% auto;
 }
 
 body.location {
-	background: url(../images/location_bottom_img.png) bottom 0 left 0 no-repeat fixed;
+	background: url(../images/location_bottom_img.png) bottom 0 left 0 no-repeat
+		fixed;
 	background-size: 100% auto;
 }
 
@@ -42,39 +45,37 @@ body.appointment {
 	background-size: 100% auto;
 }
 
-
 ul {
 	list-style: none;
 	padding: 0;
 	display: inline;
 }
 
-a{
+a {
 	color: #000;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
-a:hover{
+a:hover {
 	text-decoration: none;
 }
 /* Page Container */
-.page-container{
+.page-container {
 	padding-top: 80px;
-	min-height: calc(100vh - 80px);
+	min-height: calc(100vh - 84px);
 }
 
-
-.content-block.dark{
-	background: #EFEFEF;
+.content-block.dark {
+	background: #efefef;
 	padding: 15px;
 }
 
-.card-block.dark{
-	background: #EFEFEF;
+.card-block.dark {
+	background: #efefef;
 	padding: 10px;
 }
 
-.page-title{
+.page-title {
 	font-family: Oswald;
 	font-style: normal;
 	font-weight: 300;
@@ -85,7 +86,7 @@ a:hover{
 	margin-bottom: 25px;
 }
 
-.page-content{
+.page-content {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 300;
@@ -94,36 +95,60 @@ a:hover{
 	color: #292929;
 }
 
-.content-block ul{
-	list-style: disc inside;
+.content-block ul {
+	list-style: none;
 	margin-left: 0%;
 	margin-bottom: 20px;
 }
 
-.content-block ul.nav-tabs{
+.list ul li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.list ul li::before {
+	position: absolute;
+	content: ' ';
+	height: 8px;
+	width: 8px;
+	display: inline-block;
+	left: 0;
+	top: 8px;
+	background-color: #292929;
+	border-radius: 10px;
+}
+
+.content-block ul.nav-tabs {
 	list-style: none;
 	margin-left: 0%;
 }
 
-@media(max-width: 992px){
-	.open .content-section{
+.left-navigation-container {
+	position: fixed;
+}
+
+@media (max-width: 992px) {
+	.left-navigation-container {
+		position: static;
+	}
+
+	.open .content-section {
 		position: relative;
 		left: -400%;
 		transition: left 0.5s;
 		display: none;
 	}
 
-	.open .left-nav{
+	.open .left-nav {
 		display: block;
 	}
 }
 
-.nav-tabs{
+.nav-tabs {
 	border: none;
 }
 
-
-.nav-tabs .nav-link{
+.nav-tabs .nav-link {
 	border: none;
 	padding-left: 0;
 	padding-right: 0;
@@ -136,41 +161,43 @@ a:hover{
 	color: #7f7f7f;
 }
 
-.nav-tabs .nav-link.active{
-	
+.nav-tabs .nav-link.active {
 	color: #292929;
 }
 
 .nav-tabs .nav-item + .nav-item {
 	padding-left: 20px;
-
 }
 
-.next-page-link{
+.next-page-link {
 	padding-top: 16px;
 	display: inline-block;
 	padding-left: 0px;
+	color: #7f7f7f;
 }
 
-.next-page-link:after{
-	content:" ";
+.next-page-link:hover {
+	font-weight: 500;
+	color: #292929;
+}
+
+.next-page-link:after {
+	content: ' ';
 	display: inline-block;
-	background: url("../images/left_icon.png") no-repeat center;
+	background: url('../images/left_icon.png') no-repeat center;
 	width: 10px;
 	height: 10px;
 	margin-left: 5px;
 }
-.next-page-link img{
+.next-page-link img {
 	margin-right: 10px;
 }
 
-
-.accordion .card-header a h5{
+.accordion .card-header a h5 {
 	padding-left: 20px;
 }
 
-
-.accordion .card .accordion .card .card-header a h5{
+.accordion .card .accordion .card .card-header a h5 {
 	padding-left: 50px;
 }
 
@@ -178,20 +205,20 @@ a:hover{
 	left: 30px;
 }
 
-.accordion .card .accordion .card .card-body{
-	padding-left: 30px
+.accordion .card .accordion .card .card-body {
+	padding-left: 30px;
 }
 
-.accordion .card .accordion .card:first-child:before{
-	content: " ";
+.accordion .card .accordion .card:first-child:before {
+	content: ' ';
 	height: 1px;
 	width: 80%;
 	display: inline-block;
-	background: #EFEFEF;
+	background: #efefef;
 }
 
-.accordion .card-header a::before{
-	content: "\f0d7";
+.accordion .card-header a::before {
+	content: '\f0d7';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	position: absolute;
@@ -200,32 +227,30 @@ a:hover{
 	color: #292929;
 }
 
-
-.accordion .card-header a.collapsed::before{
-	content: "\f0d8";
+.accordion .card-header a.collapsed::before {
+	content: '\f0d8';
 }
 
-
-.accordion .card{
+.accordion .card {
 	border: none;
 	border-radius: 0;
 	background-color: transparent;
 }
 
-.accordion .card + .card::before{
-	content: " ";
+.accordion .card + .card::before {
+	content: ' ';
 	height: 1px;
 	width: 80%;
 	display: inline-block;
-	background: #EFEFEF;
+	background: #efefef;
 }
 .card-header {
-    padding: 4px 0rem;
-    margin-bottom: 0;
-    background-color: transparent;
-	border:none;
+	padding: 4px 0rem;
+	margin-bottom: 0;
+	background-color: transparent;
+	border: none;
 }
-.card-header h5{
+.card-header h5 {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: 300;
@@ -234,29 +259,31 @@ a:hover{
 	color: #292929;
 }
 
-.accordion .card .card-body{
+.accordion .card .card-body {
 	padding: 0 0 0 0px;
 }
 
+.accordion .card .card-body.dark {
+	background-color: #efefef;
+}
 
-@media (max-width: 992px){
-	.page-container{
+@media (max-width: 992px) {
+	.page-container {
 		padding-top: 35px;
 	}
 
-	.content-block{
+	.content-block {
 		margin-top: 20px;
 	}
 }
 
-@media (max-width: 767px){
-	.page-container{
+@media (max-width: 767px) {
+	.page-container {
 		padding-top: 15px;
 	}
 }
 
-
-.logo{
+.logo {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 600;
 	color: #000;
@@ -267,64 +294,63 @@ a:hover{
 	text-transform: uppercase;
 }
 
-@media (max-width: 992px){
-	.logo{
+@media (max-width: 992px) {
+	.logo {
 		white-space: nowrap;
 		width: 100%;
 	}
 }
 /*Left Navigatioin*/
-.left-nav{
+.left-nav {
 	padding-top: 30px;
 }
 
-.left-nav ul li a{
+.left-nav ul li a {
 	font-size: 16px;
 	line-height: 16px;
-	color: #7F7F7F;
+	color: #7f7f7f;
 	font-weight: 400;
 	position: relative;
 }
 
-.left-nav ul li a:after{
-	content: " ";
+.left-nav ul li a:after {
+	content: ' ';
 	position: absolute;
 	bottom: 0px;
 	left: 0;
 	right: initial;
 	height: 2px;
 	width: 0;
-	display: inline-block;	
-	background-color: #7F7F7F;
+	display: inline-block;
+	background-color: #7f7f7f;
 	transition: width 0.6s;
 }
 
-.left-nav ul li:hover a:after{
+.left-nav ul li:hover a:after {
 	width: 100%;
 	transition: width 0.6s;
 	background-color: #000000;
 }
 
-.left-nav ul li a.active{
-	
+.left-nav ul li a.active {
 	color: #000;
 }
 
-.left-nav ul li{
+.left-nav ul li {
 	padding: 5px 0;
 }
 
-@media (max-width: 992px){
-	.mobile-top-header{
+@media (max-width: 992px) {
+	.mobile-top-header {
 		position: relative;
 		height: 50px;
 		margin-bottom: 50px;
 	}
-	.header-btn{
+	.header-btn {
 		width: 150px;
 	}
 
-	.left-nav{
+	.left-nav {
 		display: none;
 	}
 }
@@ -332,7 +358,7 @@ a:hover{
 .button-section {
 	padding-top: 20px;
 }
-.btn.custom{
+.btn.custom {
 	background-color: #fff;
 	border: 2px solid #292929;
 	box-shadow: 2px 2px 0px #222222;
@@ -344,20 +370,24 @@ a:hover{
 	transform: box-shadow 0.4s;
 }
 
-.btn.custom.large-btn{
+.btn.custom.large-btn {
 	line-height: 24px;
 }
 
-.btn.custom.full{
+.btn.custom.full {
 	width: 100%;
 }
 
-.btn.custom:hover{
-transform: box-shadow 0.4s;
-	box-shadow: -2px -2px 0px #222222;
-
+.btn.custom:hover {
+	background-color: #e2e2e2;
+	transform: background-color 0.4s;
 }
 
+.btn.custom:active {
+	background-color: #e2e2e2;
+	box-shadow: 0px 0px 0px #222222;
+	transform: box-shadow 0.4s;
+}
 
 /*Footer*/
 
@@ -387,10 +417,9 @@ footer ul li a:focus {
 	box-shadow: none;
 }
 
-#map
-{
-    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);    
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+#map {
+	filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
 }
